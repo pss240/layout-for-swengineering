@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="com.example.myapplication.JoinFragment"
+        android:label="fragment_join"
+        tools:layout="@layout/fragment_join" >
+        <action
+            android:id="@+id/action_joinFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_joinFragment"
+            app:destination="@id/joinFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.myapplication.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_wordpackFragment"
+            app:destination="@id/wordpackFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_freeboardFragment"
+            app:destination="@id/freeboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.myapplication.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_quizFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/action_quizFragment_to_quickquizFragment"
+            app:destination="@id/quickquizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordpackFragment"
+        android:name="com.example.myapplication.WordpackFragment"
+        android:label="fragment_wordpack"
+        tools:layout="@layout/fragment_wordpack" >
+        <action
+            android:id="@+id/action_wordpackFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/freeboardFragment"
+        android:name="com.example.myapplication.FreeboardFragment"
+        android:label="fragment_freeboard"
+        tools:layout="@layout/fragment_freeboard" >
+        <action
+            android:id="@+id/action_freeboardFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quickquizFragment"
+        android:name="com.example.myapplication.QuickquizFragment"
+        android:label="fragment_quickquiz"
+        tools:layout="@layout/fragment_quickquiz" />
+</navigation>

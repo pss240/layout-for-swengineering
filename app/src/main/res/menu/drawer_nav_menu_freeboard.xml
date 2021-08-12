@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btn_board1"
+        android:title="board1"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+    <item
+        android:id="@+id/btn_board2"
+        android:title="board2"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+    <item
+        android:id="@+id/btn_board3"
+        android:title="board3"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+</menu>

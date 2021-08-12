@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btn_voca_quiz"
+        android:title="voca-quiz"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+    <item
+        android:id="@+id/btn_voca_review"
+        android:title="voca-review"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+    <item
+        android:id="@+id/btn_free_board"
+        android:title="free_board"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+
+
+
+</menu>

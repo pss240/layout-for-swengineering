@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btn_upload_word_pack"
+        android:title="upload word pack"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+    <item
+        android:id="@+id/btn_mywordpack"
+        android:title="My Voca Pack"
+        android:icon="@drawable/ic_baseline_photo_size_select_actual_24"
+        />
+</menu>
